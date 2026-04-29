@@ -1,8 +1,12 @@
+name: My first CI
+
 on:
   push:
 
 jobs:
   hello:
+    name: My hello job
     runs-on: ubuntu-latest
     steps:
-    - run: echo "Hello World"
+      - name: Print Hello
+        run: echo "Hello World"
